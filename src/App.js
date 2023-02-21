@@ -52,7 +52,7 @@ function App() {
     if (numOfWeek && numOfWeek !== "0") {
       for (let row = 0; row < newTable.length; row++) {
         newTable[row].weeklyTasks[
-          (row + Number(numOfWeek) - 1) % 8
+          (row + Number(numOfWeek) - 1) % MEMBERS.length
         ].todo = true;
       }
     }
