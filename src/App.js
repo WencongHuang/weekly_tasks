@@ -9,6 +9,7 @@ const WEEKLY_TASKS = [
   "Clean Kitchen Desktop",
   "Wash Stove Desktop",
   "Take out Trash",
+  "TBD",
 ];
 
 const MEMBERS = [
@@ -19,6 +20,7 @@ const MEMBERS = [
   "Jefferson",
   "Nathan",
   "Alex",
+  "Amelia",
 ];
 
 function App() {
@@ -50,7 +52,7 @@ function App() {
     if (numOfWeek && numOfWeek !== "0") {
       for (let row = 0; row < newTable.length; row++) {
         newTable[row].weeklyTasks[
-          (row + Number(numOfWeek) - 1) % 7
+          (row + Number(numOfWeek) - 1) % 8
         ].todo = true;
       }
     }
