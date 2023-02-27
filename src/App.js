@@ -40,7 +40,7 @@ function App() {
   const handleGenerateClick = (numOfWeek) => {
     if (WEEKLY_TASKS.length !== MEMBERS.length) {
       throw new Error(
-        `WEEKLY_TASKS and MEMBERS array length are not matching to each other`
+        ` ${WEEKLY_TASKS} and ${MEMBERS} array length are not matching to each other`
       );
     }
 
