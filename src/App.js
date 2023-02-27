@@ -38,6 +38,12 @@ function App() {
   };
 
   const handleGenerateClick = (numOfWeek) => {
+    if (WEEKLY_TASKS.length !== MEMBERS.length) {
+      throw new Error(
+        `WEEKLY_TASKS and MEMBERS array length are not matching to each other`
+      );
+    }
+
     const newTable = MEMBERS.map((member) => {
       const newTask = WEEKLY_TASKS.map((task) => {
         return { task: task, todo: false };
